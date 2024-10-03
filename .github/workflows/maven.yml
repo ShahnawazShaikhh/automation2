@@ -21,9 +21,11 @@ jobs:
 
     - name: Build with Maven
       run: mvn clean install -DskipTests   # Skip tests since no database is used
+      working-directory: ./automation       # Set working directory to /automation
 
     - name: Build Docker image
       run: docker build -t shahnawaz312/java-app:latest .
+      working-directory: ./automation       # Set working directory to /automation
 
     - name: Login to DockerHub
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
@@ -74,4 +76,4 @@ jobs:
       run: sleep 10
  
     - name: Verify Deployment
-      run: kubectl get all
+      run: kubectl get all 
