@@ -69,8 +69,8 @@ jobs:
 
     - name: Deploy the application
       run: |
-        kubectl apply -f deployment.yml
-        kubectl apply -f service.yml
+        kubectl apply -f ./automation/deployment.yml
+        kubectl apply -f ./automation/service.yml
 
     - name: Wait for 10 seconds
       run: sleep 10
