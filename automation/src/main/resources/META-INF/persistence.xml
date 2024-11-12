@@ -6,7 +6,7 @@
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://a15f53f86f86a4b57a16c900e631a413-1552777760.us-east-1.elb.amazonaws.com:3306/automation5?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://a4d83351e4f3547afb700dc55113fc5e-1186952150.us-east-1.elb.amazonaws.com:3306/automation5?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.password" value="root"/>
               <property name="connection.pool_size" value="600"/>
